@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 
 const FetchData = () => {
-  const [items, setUsers] = useState([]);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/programming-languages')
+    fetch('http://localhost:3000/languages')
       .then((res) => res.json())
       .then((data) => {
         // Assuming the data is in the format shown above
         const itemsArray = data.data;
-        setUsers(itemsArray);
+        setItems(itemsArray);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
