@@ -1,7 +1,7 @@
-# Run MySQL Server
+# MySQL Server
 Create a db and setup.sql script.
 
-# Run API Server
+# API Server
 Go to api folder and update config.js with db credentials. Type below on terminal to run API server:
 * npm i
 * cd api
