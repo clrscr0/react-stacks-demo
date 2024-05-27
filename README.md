@@ -1,9 +1,8 @@
 # MySQL Server
-Create a db and setup.sql script.
+Create a db and run setup.sql script.
 
 # API Server
-Go to api folder and update config.js with db credentials. Alternatively, you can go to simple-api folder and update db credentials in index.js. (simple-api is a simplier implementation of the API backend implementation)
-Type below on terminal to run API server:
+Go to api folder and update config.js with db credentials. Alternatively, you can go to simple-api folder and update db credentials in index.js. (simple-api is a simpler implementation of the API). Type below on terminal to run API server:
 * npm i
 * cd api
 * node index.js
