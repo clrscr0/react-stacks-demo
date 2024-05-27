@@ -1,5 +1,5 @@
 {
-  "name": "react-quiz-app",
+  "name": "react-node-mysql-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
