@@ -17,6 +17,15 @@ async function getMultiple(page = 1){
   }
 }
 
+async function search(id){
+  const rows = await db.callSpSearch(id);
+  const data = helper.emptyOrRows(rows);
+  return {
+    data
+  }
+}
+
 module.exports = {
-  getMultiple
+  getMultiple,
+  search
 }

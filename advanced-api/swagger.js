@@ -4,9 +4,9 @@ const options = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'My API',
+            title: 'MERN Mysql Demo API',
             version: '1.0.0',
-            description: 'My awesome API documentation',
+            description: 'Node API with Swagger',
         },
     },
     apis: ['./routes/*.js'], // Specify the path to your route files

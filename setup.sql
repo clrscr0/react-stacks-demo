@@ -31,3 +31,11 @@ VALUES
 (14,'Go',2009,4,13,14),
 (15,'Rust',2010,14,16,26),
 (16,'Scala',2004,11,17,34);
+
+DELIMITER $$
+CREATE PROCEDURE `sp_search_programming_languages_by_id`(in langid int)
+BEGIN
+    SELECT name, githut_rank, pypl_rank, tiobe_rank, created_at
+    FROM programming_languages
+    where id = langid;
+END $$

@@ -5,7 +5,8 @@ const config = {
       user: "test-user",
       password: "@test1.",
       database: "test",
-      connectTimeout: 60000
+      connectTimeout: 60000,
+      multipleStatements: true
     },
     listPerPage: 10,
   };
