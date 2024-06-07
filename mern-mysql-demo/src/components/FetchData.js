@@ -4,7 +4,7 @@ const FetchData = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/languages')
+    fetch('http://localhost:3002/languages')
       .then((res) => res.json())
       .then((data) => {
         // Assuming the data is in the format shown above
