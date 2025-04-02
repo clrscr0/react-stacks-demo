@@ -1,10 +1,6 @@
 services:
   postgres:
     image: postgres:17
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydb
     ports:
       - '5432:5432'
     expose:
@@ -13,17 +9,19 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     networks:
       - mynetwork
+    env_file:
+      - ./backend/.env
 
   api:
     build: ./backend
     ports:
       - '3001:3001'
-    environment:
-      DATABASE_URL: postgresql://user:password@postgres:5432/mydb?schema=public
     depends_on:
       - postgres
     networks:
       - mynetwork
+    env_file:
+      - ./backend/.env
 
   frontend:
     build: ./frontend
