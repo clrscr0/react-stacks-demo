@@ -1,0 +1,37 @@
+# Node.js backend
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/prisma/migrations/
+backend/prisma/dev.db
+
+# Next.js frontend
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+
+# Docker
+.dockerignore
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files (if you have more)
+*.env.local
+*.env.development
+*.env.production
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Package lock files (if you use yarn)
+yarn-error.log
+
+# Temporary files
+tmp/
+temp/
