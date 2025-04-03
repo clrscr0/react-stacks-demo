@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "react-stacks-demo/react-docker-demo"
+		},
+		{
+			"path": "react-stacks-demo/mern-mysql-demo"
+		}
+	]
+}
